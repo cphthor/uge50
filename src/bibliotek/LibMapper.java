@@ -1,0 +1,32 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package bibliotek;
+
+import java.util.ArrayList;
+
+/**
+ * 2700,Brønshøj,Husum,Københavns Biblioteker,Frederikssundsvej 290,55.7113268,Folkebibliotek,710107,12.4747123,Husum Bibliotek
+3000,Helsingør,Abildvængets Bibliotek,Helsingør Kommunes Biblioteker,Abildgårdsvej 2,56.030787,Folkebibliotek,721702,12.592127,Abildvængets Bibliotek
+3100,Hornbæk,Hornbæk Bibliotek,Helsingør Kommunes Biblioteker,Vestre Stejlebakke 2 A,56.0905393,Folkebibliotek,721703,12.455753312.4557533,Hornbæk Bibliotek
+* 6800,Varde,Varde Bibliotek,Varde Bibliotek,Rådhusstræde 2,55.619605,Folkebibliotek,757300,8.479888,Varde Bibliotek
+ */
+public class LibMapper {
+
+
+	public ArrayList<Library> getAllLibsFromStorage() {
+		ArrayList<Library> myLibs = new ArrayList<>();
+		Library lib1 = new Library(710107, "2700", "Brønshøj", "Husum", "Husum Bibliotek", "Frederikssundsvej 290", "Folkebibliotek",55.7113268,12.4747123);
+		Library lib2 = new Library(721702, "3000", "Helsingør", "Helsingør", "Abildvængets Bibliotek", "Abildgårdsvej 2", "Folkebibliotek",56.030787,12.592127);
+		Library lib3 = new Library(721703, "3100", "Hornbæk", "Hornbæk", "Hornbæk Bibliotek", "Vestre Stejlebakke 2 A", "Folkebibliotek",56.0905393,12.4557533);
+		Library lib4 = new Library(757300, "6800", "Varde", "Varde", "Varde Bibliotek", "Rådhusstræde 2", "Folkebibliotek",55.619605,8.479888);
+		myLibs.add(lib1);
+		myLibs.add(lib2);
+		myLibs.add(lib3);
+		myLibs.add(lib4);
+		
+		return myLibs;
+	}
+}
