@@ -1,0 +1,16 @@
+postnr,by,kortnavn,væsensnavn,adresse,latitude,bibliotekstype,id,longitude,navn
+1172,København K,København,Københavns Biblioteker,Krystalgade 15,55.680887,Folkebibliotek,710100,12.573619,"Hovedbiblioteket, Krystalgade"
+2200,København N,Blågården,Københavns Biblioteker,Blågårds Plads 5,55.6860904,Folkebibliotek,710104,12.5567168,Blågårdens Bibliotek
+2700,Brønshøj,Brønshøj,Københavns Biblioteker,"Krabbesholmvej 3
+",55.7042921,Folkebibliotek,710105,12.4993836,Brønshøj Bibliotek
+2700,Brønshøj,Husum,Københavns Biblioteker,Frederikssundsvej 290,55.7113268,Folkebibliotek,710107,12.4747123,Husum Bibliotek
+3000,Helsingør,Abildvængets Bibliotek,Helsingør Kommunes Biblioteker,Abildgårdsvej 2,56.030787,Folkebibliotek,721702,12.592127,Abildvængets Bibliotek
+3100,Hornbæk,Hornbæk Bibliotek,Helsingør Kommunes Biblioteker,Vestre Stejlebakke 2 A,56.0905393,Folkebibliotek,721703,12.4557533,Hornbæk Bibliotek
+3000,Helsingør,Vapnagård Bibliotek,Helsingør Kommunes Biblioteker,Hovmarken 7,56.021911,Folkebibliotek,721704,12.581346,Vapnagård Bibliotek
+6400,Sønderborg,Ulkebøl,Biblioteket Sønderborg,"Torvet 14, Ulkebøl",54.9244842,Folkebibliotek,754009,9.8218802,Biblioteket Ulkebøl
+6440,Augustenborg,Fynshav,Biblioteket Sønderborg,"Gyden 96
+6740,Bramming,Bramming Bibliotek,Esbjerg Kommunes Biblioteker,Sct. Knuds Alle 2,55.465751,Folkebibliotek,756122,8.703061,Bramming Bibliotek
+6800,Varde,Varde Bibliotek,Varde Bibliotek,Rådhusstræde 2,55.619605,Folkebibliotek,757300,8.479888,Varde Bibliotek
+6800,Varde,Bogbussen,Varde Bibliotek,Rådhusstræde 2,55.619605,Folkebibliotek,757304,8.479888,Bogbussen
+6870,Ølgod,Ølgod  Bibliotek,Varde Bibliotek,Vestergade 5,55.8081156,Folkebibliotek,757306,8.6170693,Ølgod Bibliotek
+6600,Vejen,Vejen Bibliotek,Vejen Kommunes Biblioteker,Rådhuspassagen 8,55.4770455,Folkebibliotek,757500,9.1373525,Vejen Bibliotek
