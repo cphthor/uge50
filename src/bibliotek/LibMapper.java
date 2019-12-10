@@ -18,10 +18,18 @@ public class LibMapper {
 
 	public ArrayList<Library> getAllLibsFromStorage() {
 		ArrayList<Library> myLibs = new ArrayList<>();
-		Library lib1 = new Library(710107, "2700", "Brønshøj", "Husum", "Husum Bibliotek", "Frederikssundsvej 290", "Folkebibliotek",55.7113268,12.4747123);
-		Library lib2 = new Library(721702, "3000", "Helsingør", "Helsingør", "Abildvængets Bibliotek", "Abildgårdsvej 2", "Folkebibliotek",56.030787,12.592127);
-		Library lib3 = new Library(721703, "3100", "Hornbæk", "Hornbæk", "Hornbæk Bibliotek", "Vestre Stejlebakke 2 A", "Folkebibliotek",56.0905393,12.4557533);
-		Library lib4 = new Library(757300, "6800", "Varde", "Varde", "Varde Bibliotek", "Rådhusstræde 2", "Folkebibliotek",55.619605,8.479888);
+		Library lib1 = new Library(710107, "Husum Bibliotek", "Folkebibliotek",55.7113268,12.4747123);
+		Address tmpAddress = new Address("2700", "Brønshøj", "Husum", "Frederikssundsvej 290");
+		lib1.setAddress(tmpAddress);
+		Library lib2 = new Library(721702, "Abildvængets Bibliotek", "Folkebibliotek",56.030787,12.592127);
+		tmpAddress = new Address("3000", "Helsingør", "Helsingør", "Abildgårdsvej 2");
+		lib1.setAddress(tmpAddress);
+		Library lib3 = new Library(721703, "Hornbæk Bibliotek", "Folkebibliotek",56.0905393,12.4557533);
+		tmpAddress = new Address("3100", "Hornbæk", "Hornbæk", "Vestre Stejlebakke 2 A");
+		lib1.setAddress(tmpAddress);
+		Library lib4 = new Library(757300, "Varde Bibliotek", "Folkebibliotek",55.619605,8.479888);
+		tmpAddress = new Address("6800", "Varde", "Varde", "Rådhusstræde 2");
+		lib1.setAddress(tmpAddress);
 		myLibs.add(lib1);
 		myLibs.add(lib2);
 		myLibs.add(lib3);

@@ -12,45 +12,34 @@ package bibliotek;
 public class Library implements Comparable<Object>{
 //	1420,København K,Christianshavn,Københavns Biblioteker,Dronningensgade 53,55.6723406,Folkebibliotek,710106,12.5921292,Christianshavns Bibliotek
 	int id;
-	String postalcode;
-	String shortName;
 	String longName;
-	String city;
-	String addresse;
 	String typeOfLibrary;
+	Address address;
 	Double latitude;
 	Double longitude;
 
-	public Library(int id, String postalcode, String city, String shortName, String longName, String addresse, String typeOfLibrary, Double latitude, Double longitude) {
+	public Library(int id, String longName, String typeOfLibrary, Double latitude, Double longitude) {
 		this.id = id;
-		this.postalcode = postalcode;
-		this.shortName = shortName;
-		this.city = city;
 		this.longName = longName;
-		this.addresse = addresse;
 		this.typeOfLibrary = typeOfLibrary;
 		this.latitude = latitude;
 		this.longitude = longitude;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
 	}
 
 	public int getId() {
 		return id;
 	}
 
-	public String getPostalcode() {
-		return postalcode;
-	}
-
-	public String getShortName() {
-		return shortName;
-	}
-
 	public String getLongName() {
 		return longName;
 	}
 
-	public String getAddresse() {
-		return addresse;
+	public Address getAddresse() {
+		return address;
 	}
 
 	public String getTypeOfLibrary() {
@@ -73,8 +62,6 @@ public class Library implements Comparable<Object>{
 	}
 	public String toString() {
 		String msg = "";
-		msg += city + "; ";
-		msg += shortName + "; ";
 		msg += longName + "; ";
 		msg += latitude + "; ";
 		msg += longitude + "; ";
