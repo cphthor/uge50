@@ -17,17 +17,19 @@ import static org.junit.Assert.*;
  */
 public class DogHandlerTest {
 	DogHandler dogHandler;
+	DogStorage dhs;
 	
 	public DogHandlerTest() {
 	}
 	
 	@Before
 	public void setUp() {
+		dhs = new DogMockStorage();
 	}
 
 	@Test
 	public void testloadDogsFromStorage() {
-		dogHandler = new DogHandler();
+		dogHandler = new DogHandler(dhs);
 		ArrayList<Dog> dogs = dogHandler.loadDogsFromStorage();
 		int actual = dogs.size();
 		int expected = 4;
@@ -35,7 +37,7 @@ public class DogHandlerTest {
 	}
 	@Test
 	public void testsortDogsByRace() {
-		dogHandler = new DogHandler();
+		dogHandler = new DogHandler(dhs);
 		ArrayList<Dog> dogs = dogHandler.loadDogsFromStorage();
 		Collections.sort(dogs);
 		String actual = dogs.get(0).getRace();

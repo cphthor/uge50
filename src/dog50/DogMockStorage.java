@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package dog50;
 
 import java.util.ArrayList;
@@ -11,24 +6,15 @@ import java.util.ArrayList;
  *
  * @author thor
  */
-public class DogHandler {
-
+public class DogMockStorage implements DogStorage{
 	private ArrayList<Dog> dogs;
-	private DogStorage dhs;
-
-	public DogHandler(DogStorage dhs) {
-		this.dhs = dhs;
+	
+	public DogMockStorage() {
+		this.dogs = new ArrayList<>();
 	}
-
+	
+	@Override
 	public ArrayList<Dog> loadDogsFromStorage() {
-		dogs = new ArrayList<>();
-		/*
-		("Red","Dobermann","AMY","Desexed Female","WATERLOO CORNER") 
-("Black","German Shepherd Dog","DOMINO","Desexed Female","MACDONALD PARK")
-("Blenheim","Spaniel","SAMO","Male","HILLIER")
-("Blenheim","Spaniel","ANDY","Male","HILLIER")
-("Blenheim","Spaniel","CORKY","Female","HILLIER")
-		*/
 		Dog mydog1 = new Dog("Blenheim","Spaniel","SAMO","Male","HILLIER");
 		Dog mydog2 = new Dog("Black","German Shepherd Dog","DOMINO","Desexed Female","MACDONALD PARK");
 		Dog mydog3 = new Dog("Blenheim","Spaniel","CORKY","Female","HILLIER");
