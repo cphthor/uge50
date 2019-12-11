@@ -15,13 +15,14 @@ import static org.junit.Assert.*;
  * Farve,Race,Navn,Gender,location
  */
 public class DogTest {
-	int id;
+	long id;
 	String color;
 	String race;
 	String name;
 	String gender;
 	String location;
 	Dog mydog;
+
 	
 	public DogTest() {
 	}
@@ -33,13 +34,16 @@ public class DogTest {
 		name = "Amy";
 		gender = "Desexed Female";
 		location = "Waterloo Corner";
+		id = 276098101089283L;
+
 	}
 
 	@Test
 	public void testgetDogId() {
 		mydog = new Dog(color,race,name,gender,location);
-		int actual = mydog.getDogId();
-		long expected = 276098101089283L ;
+		mydog.setId(id);
+		long actual = mydog.getId();
+		long expected = 276098101089283L;
 		assertEquals(expected, actual);
 	}
 	

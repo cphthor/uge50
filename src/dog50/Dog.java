@@ -1,8 +1,3 @@
-/*
-* To change this license header, choose License Headers in Project Properties.
-* To change this template file, choose Tools | Templates
-* and open the template in the editor.
-*/
 package dog50;
 
 /**
@@ -10,7 +5,7 @@ package dog50;
  * @author thor
  */
 public class Dog {
-	int id;
+	long id;
 	String color;
 	String race;
 	String name;
@@ -25,32 +20,12 @@ public class Dog {
 		this.location = location;
 	}
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
-	}
-
-	public String getColor() {
-		return color;
-	}
-
-	public String getRace() {
-		return race;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public String getGender() {
-		return gender;
-	}
-
-	public String getLocation() {
-		return location;
 	}
 	
 	
