@@ -4,7 +4,7 @@ package dog50;
  *
  * @author thor
  */
-public class Dog {
+public class Dog implements Comparable<Dog>{
 	long id;
 	String color;
 	String race;
@@ -26,6 +26,15 @@ public class Dog {
 
 	public void setId(long id) {
 		this.id = id;
+	}
+
+	public String getRace() {
+		return race;
+	}
+
+	@Override
+	public int compareTo(Dog o) {
+		return this.race.compareTo(o.getRace());
 	}
 	
 	

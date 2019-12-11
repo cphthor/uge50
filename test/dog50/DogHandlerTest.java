@@ -6,6 +6,7 @@
 package dog50;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -30,6 +31,15 @@ public class DogHandlerTest {
 		ArrayList<Dog> dogs = dogHandler.loadDogsFromStorage();
 		int actual = dogs.size();
 		int expected = 4;
+		assertEquals(expected, actual);
+	}
+	@Test
+	public void testsortDogsByRace() {
+		dogHandler = new DogHandler();
+		ArrayList<Dog> dogs = dogHandler.loadDogsFromStorage();
+		Collections.sort(dogs);
+		String actual = dogs.get(0).getRace();
+		String expected = "Fobermann";
 		assertEquals(expected, actual);
 	}
 	
