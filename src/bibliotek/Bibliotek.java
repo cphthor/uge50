@@ -15,6 +15,33 @@ import java.util.Collections;
 public class Bibliotek {
 
 	public static void main(String[] args) {
+		ArrayList<Address> ads = new ArrayList<>();
+
+		Address ta = new Address("D2700", "Brønshøj", "Husum", "Frederikssundsvej 290");
+		Address tb = new Address("2700", "Brønshøj", "Husum", "Frederikssundsvej 290");
+		Address tc = new Address("3100", "Brønshøj", "Husum", "Frederikssundsvej 290");
+		Validation val = new AddressValidationRule();
+		try {
+			
+		val.Validate(ta);
+		System.out.println(ta);
+		} catch (Exception e) {
+			System.out.println("Error: "+ e);
+		}
+		try {
+			
+		val.Validate(tb);
+		System.out.println(tb);
+		} catch (Exception e) {
+			System.out.println("Error: "+ e);
+		}
+		try {
+		val.Validate(tc);
+		System.out.println(tc);
+		} catch (Exception e) {
+			System.out.println("Error: "+ e);
+		}
+		/*
 		LibraryHandler libraryHandler = new LibraryHandler();
 		ArrayList<Library> librarys = new ArrayList<>();
 		librarys = libraryHandler.getAllLibsFromStorage();
@@ -27,5 +54,6 @@ public class Bibliotek {
 		for (Library library : librarys) {
 			System.out.println(library.toString());
 		}
+*/
 	}
 }

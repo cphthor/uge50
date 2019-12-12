@@ -15,11 +15,18 @@ import java.util.ArrayList;
  */
 public class LibMapper {
 
+	Validation validation;
+
+	public LibMapper() {
+		validation = new AddressValidationRule();
+	}
+
 
 	public ArrayList<Library> getAllLibsFromStorage() {
 		ArrayList<Library> myLibs = new ArrayList<>();
 		Library lib1 = new Library(710107, "Husum Bibliotek", "Folkebibliotek",55.7113268,12.4747123);
-		Address tmpAddress = new Address("2700", "Brønshøj", "Husum", "Frederikssundsvej 290");
+		Address tmpAddress = new Address("D2700", "Brønshøj", "Husum", "Frederikssundsvej 290");
+		validation.Validate(tmpAddress);
 		lib1.setAddress(tmpAddress);
 		Library lib2 = new Library(721702, "Abildvængets Bibliotek", "Folkebibliotek",56.030787,12.592127);
 		tmpAddress = new Address("3000", "Helsingør", "Helsingør", "Abildgårdsvej 2");
